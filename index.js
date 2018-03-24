@@ -18,7 +18,7 @@ module.exports = new CSSPluginBase(function compile (style, address, opts) {
 
   return Promise.all([
     SystemJS.import('postcss', module.id),
-    SystemJS.import('cssnext', module.id)
+    SystemJS.import('postcss-cssnext', module.id)
   ])
     .then(([postcss, cssnext]) => postcss([cssnext]).process(style))
     .then(({css, map}) => {
