@@ -1,0 +1,40 @@
+{
+  "name": "systemjs-plugin-cssnext",
+  "version": "1.0.0",
+  "description": "Transpiles cssnext syntax to plain css and makes it available to your systemjs app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"index.js\""
+  },
+  "pre-push": [
+    "lint"
+  ],
+  "keywords": [
+    "cssnext",
+    "systemjs"
+  ],
+  "author": "janouma",
+  "license": "ISC",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "dependencies": {
+    "postcss": "^6.0.21",
+    "postcss-cssnext": "^3.1.0",
+    "systemjs-plugin-css": "^0.1.37"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "pre-push": "^0.1.1",
+    "standard": "^11.0.1"
+  }
+}
