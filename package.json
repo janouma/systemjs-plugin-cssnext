@@ -4,9 +4,7 @@
   "description": "Transpiles cssnext syntax to plain css and makes it available to your systemjs app",
   "main": "index.js",
   "files": [
-    "index.js",
-    "postcss.js",
-    "postcss-cssnext.js"
+    "index.js"
   ],
   "scripts": {
     "lint": "eslint \"index.js\"",
