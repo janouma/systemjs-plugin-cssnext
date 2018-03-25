@@ -32,14 +32,14 @@
     ]
   },
   "dependencies": {
+    "postcss": "^6.0.21",
+    "postcss-cssnext": "^3.1.0",
+    "derequire": "^2.0.6",
+    "browserify": "^16.1.1",
     "systemjs-plugin-css": "^0.1.37"
   },
   "devDependencies": {
-    "postcss": "^6.0.21",
-    "postcss-cssnext": "^3.1.0",
     "babel-eslint": "^8.2.2",
-    "browserify": "^16.1.1",
-    "derequire": "^2.0.6",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-promise": "^3.7.0",
