@@ -12,6 +12,7 @@
     "lint": "eslint \"index.js\"",
     "build-postcss": "browserify node_modules/postcss/lib/postcss.js -s postcss | derequire > postcss.js",
     "build-postcss-cssnext": "browserify node_modules/postcss-cssnext/lib/index.js -s postcssCssnext | derequire > postcss-cssnext.js",
+    "preinstall": "npm i --ignore-scripts",
     "postinstall": "npm run build-postcss && npm run build-postcss-cssnext"
   },
   "pre-push": [
