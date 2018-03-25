@@ -11,89 +11,89 @@ function fromFileURL (url) {
 }
 
 const features = {
-  calc: false,
+  // https://npmjs.com/package/postcss-custom-properties
   customProperties: false,
 
   // https://npmjs.com/package/postcss-apply
-  applyRule: false,
+  // applyRule: false,
 
   // https://npmjs.com/package/postcss-calc
-  calc: false,
+  calc: false
 
   // https://www.npmjs.com/package/postcss-image-set-polyfill
-  imageSet: false,
+  // imageSet: false,
 
   // https://npmjs.com/package/postcss-nesting
-  nesting: true,
+  // nesting: true,
 
   // https://npmjs.com/package/postcss-custom-media
-  customMedia: false,
+  // customMedia: false,
 
   // https://npmjs.com/package/postcss-media-minmax
-  mediaQueriesRange: false,
+  // mediaQueriesRange: false,
 
   // https://npmjs.com/package/postcss-custom-selectors
-  customSelectors: false,
+  // customSelectors: false,
 
   // https://npmjs.com/package/postcss-attribute-case-insensitive
-  attributeCaseInsensitive: false,
+  // attributeCaseInsensitive: false,
 
   // https://npmjs.com/package/postcss-color-rebeccapurple
-  colorRebeccapurple: false,
+  // colorRebeccapurple: false,
 
   // https://npmjs.com/package/postcss-color-hwb
-  colorHwb: false,
+  // colorHwb: false,
 
   // https://npmjs.com/package/postcss-color-hsl
-  colorHsl: false,
+  // colorHsl: false,
 
   // https://npmjs.com/package/postcss-color-rgb
-  colorRgb: false,
+  // colorRgb: false,
 
   // https://npmjs.com/package/postcss-color-gray
-  colorGray: false,
+  // colorGray: false,
 
   // https://npmjs.com/package/postcss-color-hex-alpha
-  colorHexAlpha: false,
+  // colorHexAlpha: false,
 
   // https://npmjs.com/package/postcss-color-function
-  colorFunction: false,
+  // colorFunction: false,
 
   // https://npmjs.com/package/postcss-font-family-system-ui
-  fontFamilySystemUi: false,
+  // fontFamilySystemUi: false,
 
   // https://npmjs.com/package/postcss-font-variant
-  fontVariant: false,
+  // fontVariant: false,
 
   // https://npmjs.com/package/pleeease-filters
-  filter: false,
+  // filter: false,
 
   // https://npmjs.com/package/postcss-initial
-  initial: false,
+  // initial: false,
 
   // https://npmjs.com/package/pixrem
-  rem: false,
+  // rem: false,
 
   // https://npmjs.com/package/postcss-pseudoelements
-  pseudoElements: false,
+  // pseudoElements: false,
 
   // https://npmjs.com/package/postcss-selector-matches
-  pseudoClassMatches: false,
+  // pseudoClassMatches: false,
 
   // https://npmjs.com/package/postcss-selector-not
-  pseudoClassNot: false,
+  // pseudoClassNot: false,
 
   // https://npmjs.com/package/postcss-pseudo-class-any-link
-  pseudoClassAnyLink: false,
+  // pseudoClassAnyLink: false,
 
   // https://npmjs.com/package/postcss-color-rgba-fallback
-  colorRgba: false,
+  // colorRgba: false,
 
   // https://www.npmjs.com/package/postcss-replace-overflow-wrap
-  overflowWrap: false,
+  // overflowWrap: false,
 
   // https://npmjs.com/package/autoprefixer
-  autoprefixer: false
+  // autoprefixer: false
 }
 
 module.exports = new CSSPluginBase(function compile (style, address, opts) {
