@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Transpiles cssnext syntax to plain css and makes it available to your systemjs app",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "postcss.js",
+    "postcss-cssnext.js"
+  ],
   "scripts": {
-    "lint": "eslint \"index.js\""
+    "lint": "eslint \"index.js\"",
+    "build-postcss": "browserify node_modules/postcss/lib/postcss.js -s postcss | derequire > postcss.js",
+    "build-postcss-cssnext": "browserify node_modules/postcss-cssnext/lib/index.js -s postcssCssnext | derequire > postcss-cssnext.js",
+    "preinstall": "npm i --ignore-scripts",
+    "postinstall": "npm run build-postcss && npm run build-postcss-cssnext"
   },
   "pre-push": [
     "lint"
@@ -26,6 +35,8 @@
   "dependencies": {
     "postcss": "^6.0.21",
     "postcss-cssnext": "^3.1.0",
+    "derequire": "^2.0.6",
+    "browserify": "^16.1.1",
     "systemjs-plugin-css": "^0.1.37"
   },
   "devDependencies": {
